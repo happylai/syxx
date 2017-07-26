@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)http://localhost:11088/User/Bll/FillInfo -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
+    <title>生育登记信息</title>
+    <link href="./生育登记信息_files/weui.css" rel="stylesheet">
+<link href="./生育登记信息_files/example.css" rel="stylesheet">
+
+    
+</head>
+<body>
+    <div class="container" id="container">
+        <div class="page">
+            <input name="__RequestVerificationToken" type="hidden" value="Cse6JSoKlPrqHXfsGOHkKacmWdJH5pGtdvLIr3vY-XF3Yh5LK_sMMZeB25msFauSBKDNvNfAnzpKM3uyK3PdQZCoFgHuYR9Txb-_abVPPuI1">
+            
+
+<form action="http://localhost:11088/User/Bll/FillInfo" method="post"><input name="__RequestVerificationToken" type="hidden" value="mYcq8mdMVd2EsDCUNaX8WloNi3XT3VPBmY24PrOIyz9bD7LBnV0i6lNAxKTh9XsOWrRZhYf5iHMoiBCv49cj_M-RDkUquduMalDn6yO8j0c1">    <input name="IsLocal" type="hidden">
+    
+    <div class="weui-cells__title">女方</div>
+    <div class=" weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">姓名</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="WName" required maxlength="11" placeholder="输入姓名" emptyTips="输入姓名" notMatchTips="请输入正确的姓名">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">名族</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="WNation " required maxlength="11" placeholder="输入名族" emptyTips="输入名族" notMatchTips="请输入正确的名族">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">出生日期</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" readonly type="date" value="1985-01-01" id="WBirthday" name="WBirthday" required emptyTips="出生日期">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">身份证号码</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="WIdcard" placeholder="请输入身份证号码" required pattern="REG_IDNUM" maxlength="18" emptyTips="请输入身份证号码" notMatchTips="请输入正确的身份证号码">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">婚育情形</label>
+            </div>
+            <div class="weui-cell__bd">
+                <select class="weui-select" name="WMarriSituation" required="" emptytips="请选择婚育情形">
+                    <option></option>
+                    <option value="初婚">初婚</option>
+                    <option value="离婚">离婚</option>
+                    <option value="复婚">复婚</option>
+                    <option value="再婚">再婚</option>
+                </select>
+            </div>
+        </div>
+        <div class="weui-cell  ">
+            <div class="weui-cell__hd">
+                <label class="weui-label">联系电话</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="tel" name="WTel" required pattern="[0-9]{11}" maxlength="11" placeholder="请输入手机号" emptyTips="请输入手机号">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">居住地址</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="WAdress" placeholder="请输入居住地址" required emptyTips="请输入居住地址">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">户籍地</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="WHouseholdReg" placeholder="请输入户籍地" required emptyTips="请输入户籍地">
+            </div>
+        </div>
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">是否独生子女</label>
+            </div>
+            <div class="weui-cell__bd">
+                <select class="weui-select" name="WOnlyChild" required="" emptytips="是否是独生子女">
+                    <option value=""></option>
+                    <option value="独生子">独生子</option>
+                    <option value="非独生子">非独生子</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <div class="weui-cells__title">男方</div>
+
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">姓名</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="MName" placeholder="请输入姓名" required emptyTips="请输入姓名">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">名族</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="MNation " required maxlength="11" placeholder="输入名族" emptyTips="输入名族" notMatchTips="请输入正确的名族">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">出生日期</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" readonly type="date" value="1985-01-01" name="MBirthday" placeholder="">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">身份证号码</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="MIdcard" placeholder="请输入身份证号码" required pattern="REG_IDNUM" maxlength="18" emptyTips="请输入身份证号码" notMatchTips="请输入正确的身份证号码">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">婚育情形</label>
+            </div>
+            <div class="weui-cell__bd">
+                <select class="weui-select" name="MMarriSituation" required="" emptytips="请选择婚育情形">
+                    <option></option>
+                    <option value="初婚">初婚</option>
+                    <option value="离婚">离婚</option>
+                    <option value="复婚">复婚</option>
+                    <option value="再婚">再婚</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="weui-cell  ">
+            <div class="weui-cell__hd">
+                <label class="weui-label">联系电话</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="tel" name="MTel" placeholder="请输入手机号" required pattern="[0-9]{11}" maxlength="11" emptyTips="请输入手机号" notMatchTips="请输入正确的手机号">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">居住地址</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="MAdress" placeholder="请输入居住地址" required emptyTips="请输入居住地址">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">户籍地</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="MHouseholdReg" placeholder="请输入户籍地" required emptyTips="请输入户籍地">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">是否独生子女</label>
+            </div>
+            <div class="weui-cell__bd">
+                <select class="weui-select" name="WOnlyChild" required="" emptytips="是否是独生子女">
+                    <option value="独生子">独生子</option>
+                    <option value="非独生子">非独生子</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="weui-cells__title">孕育情况（已怀孕对象）</div>
+
+    <div class="weui-cells weui-cells_form">
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">怀孕时间(末次月经日期)</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" value="" name="PregnantStart" placeholder="年月" required>
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">预产期</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" value="" name="DeliveryDay" placeholder="年月" required>
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+
+    </div>
+
+     <div class="weui-cells__title" id="addChird">已有子女 <a href="javascript:;" class="weui-btn weui-btn_mini weui-btn_primary" onclick="add()" ;>添加子女</a></div>
+
+    <div class="weui-cells weui-cells_form">
+    <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">子女姓名</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="CName" required maxlength="11" placeholder="输入姓名" emptyTips="输入子女姓名" notMatchTips="请输入正确的子女姓名">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell weui-cell_select weui-cell_select-after">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">子女性别</label>
+            </div>
+            <div class="weui-cell__bd">
+                <select class="weui-select" name="CGender" required="" emptytips="请选择婚育情形">
+                    <option></option>
+                    <option value="男">男</option>
+                    <option value="女">女</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label for="" class="weui-label">出生日期</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" readonly type="date" value="1985-01-01" id="WBirthday" name="CBirthday" required emptyTips="出生日期">
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">子女身份证号码</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="CIdcard" placeholder="请输入身份证号码" required pattern="REG_IDNUM" maxlength="18" emptyTips="请输入身份证号码" notMatchTips="请输入正确的身份证号码">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">父亲姓名</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="FatherName" placeholder="请输入父亲姓名" required emptyTips="请输入父亲姓名">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+        <div class="weui-cell">
+            <div class="weui-cell__hd">
+                <label class="weui-label">母亲姓名</label>
+            </div>
+            <div class="weui-cell__bd">
+                <input class="weui-input" type="text" name="MotherName " required maxlength="11" placeholder="输入名族" emptyTips="输入母亲姓名" notMatchTips="请输入正确的姓名">
+            </div>
+            <div class="weui-cell__ft">
+                <i class="weui-icon-warn"></i>
+            </div>
+        </div>
+      </div>
+       
+
+
+<div class="weui-cells__title">登记理由</div>
+    <div class="weui-cells weui-cells_form">
+            <div class="weui-cell">
+                <div class="weui-cell__bd">
+                    <textarea class="weui-textarea" name="Reason" required placeholder="请输入文本" rows="3"></textarea>
+                    <div class="weui-textarea-counter"><span>0</span>/200</div>
+                </div>
+            </div>
+        </div>
+        <div class="weui-btn-area">
+    <a id="formSubmitBtn" href="javascript:" class="weui-btn weui-btn_primary" onclick="submit()">下一步</a>
+</div>
+    </div>
+    
+
+</form>
+
+
+
+            <div class="weui-footer">
+                <p class="weui-footer__text">
+                    Powered by 思佳网络
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./生育登记信息_files/weui.js.下载"></script>
+    <script src="./生育登记信息_files/jquery-3.1.1.js.下载"></script>
+
+    
+    <script type="text/javascript">
+    function add(){
+        $("#addChird").append(['<div class="weui-cell">',
+'            <div class="weui-cell__hd">',
+'                <label class="weui-label">子女姓名</label>',
+'            </div>',
+'            <div class="weui-cell__bd">',
+'                <input class="weui-input" type="text" name="CName" required maxlength="11" placeholder="输入姓名" emptyTips="输入子女姓名" notMatchTips="请输入正确的子女姓名">',
+'            </div>',
+'            <div class="weui-cell__ft">',
+'                <i class="weui-icon-warn"></i>',
+'            </div>',
+'        </div>',
+'        <div class="weui-cell weui-cell_select weui-cell_select-after">',
+'            <div class="weui-cell__hd">',
+'                <label for="" class="weui-label">子女性别</label>',
+'            </div>',
+'            <div class="weui-cell__bd">',
+'                <select class="weui-select" name="CGender" required="" emptytips="请选择婚育情形">',
+'                    <option></option>',
+'                    <option value="男">男</option>',
+'                    <option value="女">女</option>',
+'                </select>',
+'            </div>',
+'        </div>',
+'        ',
+'        <div class="weui-cell">',
+'            <div class="weui-cell__hd">',
+'                <label for="" class="weui-label">出生日期</label>',
+'            </div>',
+'            <div class="weui-cell__bd">',
+'                <input class="weui-input" readonly type="date" value="1985-01-01" id="WBirthday" name="CBirthday" required emptyTips="出生日期">',
+'            </div>',
+'        </div>',
+'        <div class="weui-cell">',
+'            <div class="weui-cell__hd">',
+'                <label class="weui-label">子女身份证号码</label>',
+'            </div>',
+'            <div class="weui-cell__bd">',
+'                <input class="weui-input" type="text" name="CIdcard" placeholder="请输入身份证号码" required pattern="REG_IDNUM" maxlength="18" emptyTips="请输入身份证号码" notMatchTips="请输入正确的身份证号码">',
+'            </div>',
+'            <div class="weui-cell__ft">',
+'                <i class="weui-icon-warn"></i>',
+'            </div>',
+'        </div>',
+'        <div class="weui-cell">',
+'            <div class="weui-cell__hd">',
+'                <label class="weui-label">父亲姓名</label>',
+'            </div>',
+'            <div class="weui-cell__bd">',
+'                <input class="weui-input" type="text" name="FatherName" placeholder="请输入父亲姓名" required emptyTips="请输入父亲姓名">',
+'            </div>',
+'            <div class="weui-cell__ft">',
+'                <i class="weui-icon-warn"></i>',
+'            </div>',
+'        </div>',
+'        <div class="weui-cell">',
+'            <div class="weui-cell__hd">',
+'                <label class="weui-label">母亲姓名</label>',
+'            </div>',
+'            <div class="weui-cell__bd">',
+'                <input class="weui-input" type="text" name="MotherName " required maxlength="11" placeholder="输入名族" emptyTips="输入母亲姓名" notMatchTips="请输入正确的姓名">',
+'            </div>',
+'            <div class="weui-cell__ft">',
+'                <i class="weui-icon-warn"></i>',
+'            </div>',
+'        </div>'].join(""));
+    }
+
+        weui.form.checkIfBlur('form', {
+            regexp: {
+                IDNUM: /(?:^\d{15}$)|(?:^\d{18}$)|^\d{17}[\dXx]$/,
+                VCODE: /^.{4}$/
+            }
+        });
+
+        function submit() {
+            weui.form.validate('form', function (error) {
+                if (!error) {
+                    var loading = weui.loading('提交中...');
+                    $("form").submit();
+                }
+                // return true; // 当return true时，不会显示错误
+            }, {
+                regexp: {
+                    IDNUM: /(?:^\d{15}$)|(?:^\d{18}$)|^\d{17}[\dXx]$/,
+                    VCODE: /^.{4}$/
+                }
+            });
+        }
+
+        function getLowTen(m) {
+            if (m < 10)
+            { m = "0" + m }
+            return m;
+        }
+        $("[type='date']").parent().on('click', function (e) {
+            var time = $(this).children().val();
+            var year = new Date(time).getFullYear();
+            weui.datePicker({
+                start: 1960,
+                end: new Date().getFullYear(),
+                defaultValue: [year, 01, 01],
+                onChange: function (result) {
+
+                },
+                onConfirm: function (result) {
+                    $(e.toElement).val(result[0] + '-' + getLowTen(result[1]) + '-' + getLowTen(result[2]));
+                    console.log(result);
+                }
+            });
+        });
+
+    </script>
+
+
+ 
+
+
+
+</body></html>
